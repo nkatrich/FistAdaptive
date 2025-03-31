@@ -1,0 +1,583 @@
+body {
+    background: rgb(226, 226, 226);
+    margin: 0;
+    padding: 0;
+    transition: background .20s ease-in;
+}
+
+h1, h2, button, a, p, div {
+    font-family: 'Roboto', sans-serif;
+}
+
+body.dark {
+    background: rgb(31, 31, 31);
+    color: white;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background: rgb(16, 120, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background .20s ease-in;
+}
+
+header.dark-header {
+    background: rgb(12, 64, 133);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    width: 250px;
+    text-align: center;
+}
+
+.div-change-theme {
+    margin-right: 15%;
+}
+
+.change-theme {
+    padding: 0 10px;
+    font-size: 22px;
+    background: rgb(87, 160, 255);
+    border-radius: 5px;
+    border: 3px solid rgb(16, 120, 255);
+    transition: .20s ease-in;
+}
+
+.change-theme:hover {
+    background: rgb(16, 120, 255);
+    border: 3px solid rgb(87, 160, 255);
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.hero::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-image: url(images/future.png);
+    background-position: 70% 50%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.95);
+}
+
+h1 {
+    font-size: 26px;
+    text-align: center;
+    margin: 0 15%;
+    color: white;
+    padding: 10% 0;
+}
+
+.hero-about {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0 5%;
+    padding-bottom: 35%;
+}
+
+.about-card-one {
+    background: rgb(16, 120, 255);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    margin: 15% auto;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.about-card-one-h2 {
+    color: white;
+}
+
+.about-card-one-p {
+    color: white;
+}
+
+.about-card-two {
+    background: rgb(16, 120, 255);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    margin: 15% auto;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.about-card-two-h2 {
+    color: white;
+}
+
+.about-card-two-p {
+    color: white;
+
+}
+
+.about-card-three {
+    background: rgb(16, 120, 255);
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    margin: 15% auto;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.about-card-three-h2 {
+    color: white;
+
+}
+
+.about-card-three-p {
+    color: white;
+}
+
+.emoji-card {
+    font-size: 32px;
+}
+
+.speakers {
+    display: flex;
+    flex-direction: column;
+}
+
+.our-speakers {
+    text-align: center;
+}
+
+.speaker-1, .speaker-2, .speaker-3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% auto;
+    background: rgb(16, 120, 255);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 130px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.speaker-1-h2, .speaker-2-h2, .speaker-3-h2 {
+    color: white;
+}
+
+.speaker-1-h2 {
+    padding: 0 5px;
+}
+
+.speaker-3-h2 {
+    padding: 0 17px;
+}
+
+.registration-h2 {
+    text-align: center;
+    padding: 0 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    background: white;
+    border-radius: 45px 45px 0 0;
+    transition: background .20s ease-in;
+}
+
+form.dark-form {
+    background: rgb(56, 56, 56);
+}
+
+.email {
+    margin-bottom: 10%;
+    width: 60%;
+    height: 25px;
+    border: solid 2px rgb(16, 120, 255);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.email::placeholder {
+    text-align: center;
+}
+
+.password {
+    margin-bottom: 10%;
+    width: 60%;
+    height: 25px;
+    border: solid 2px rgb(16, 120, 255);
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.password::placeholder {
+    text-align: center;
+}
+
+.agree {
+    margin-bottom: 10%;
+    padding: 3% 5%;
+    background: rgb(16, 120, 255);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    height: 120px;
+    width: 100%;
+    background: rgb(16, 120, 255);
+    display: flex;
+    justify-content: space-between;
+    transition: background .20s ease-in;
+}
+
+footer.dark-footer {
+    background: rgb(12, 64, 133);
+}
+
+.logo-and-number-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-footer {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+
+.phone-number {
+    color: white;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-right: 10%;
+}
+
+.contact-information a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+    header {
+        height: 90px;
+    }
+    .logo {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        width: 400px;
+        margin-left: 5%;
+    }
+    
+    .div-change-theme {
+        margin-right: 10%;
+    }
+    
+    .change-theme {
+        padding: 10px 25px;
+        font-size: 28px;
+        background: rgb(87, 160, 255);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    .hero {
+        position: relative;
+        margin-bottom: -5%;
+    }
+    
+    .hero::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-image: url(images/future.png);
+        background-position: 70% 50%;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        filter: brightness(0.95);
+    }
+    
+    h1 {
+        font-size: 64px;
+        text-align: center;
+        margin: 0 15%;
+        color: white;
+        padding: 7% 0;
+    }
+    
+    .hero-about {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        margin: 0 5%;
+        padding-bottom: 20%;
+    }
+    .about {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -7%;
+    }
+    .about-card-one {
+        background: rgb(16, 120, 255);
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    
+    .about-card-one-h2 {
+        color: white;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    
+    .about-card-one-p {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .about-card-two {
+        background: rgb(16, 120, 255);
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    
+    .about-card-two-h2 {
+        color: white;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    
+    .about-card-two-p {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .about-card-three {
+        background: rgb(16, 120, 255);
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+        width: 270px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    
+    .about-card-three-h2 {
+        color: white;
+        font-size: 40px;
+        white-space: nowrap;
+    }
+    
+    .about-card-three-p {
+        color: white;
+        font-size: 20px;
+    }
+    
+    .emoji-card {
+        font-size: 48px;
+    }
+    .speakers {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .our-speakers-div {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .our-speakers {
+        font-size: 32px;
+    }
+    
+    .speaker-1, .speaker-2, .speaker-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 8% auto;
+        background: rgb(16, 120, 255);
+        padding: 5%;
+        border-radius: 10px;
+    }
+    
+    .img-div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .speaker-1-h2, .speaker-2-h2, .speaker-3-h2 {
+        color: white;
+    }
+
+    .registration-h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 7% 0 0 0;
+        background: white;
+        border-radius: 95px 95px 0 0;
+       
+    }
+    
+    .email {
+        margin-bottom: 5%;
+        width: 40%;
+        height: 35px;
+        border: solid 2px rgb(16, 120, 255);
+        border-top: none;
+    }
+    
+    .email::placeholder {
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .password {
+        margin-bottom: 5%;
+        width: 40%;
+        height: 35px;
+        border: solid 2px rgb(16, 120, 255);
+        border-top: none;
+    }
+    
+    .password::placeholder {
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .agree {
+        margin-bottom: 10%;
+        padding: 1% 2%;
+        background: rgb(16, 120, 255);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .20s ease-in;
+    }
+    .agree:hover {
+        background: rgb(87, 160, 255);
+    }
+    footer {
+        height: 220px;
+        width: 100%;
+        background: rgb(16, 120, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo-and-number-phone {
+        display: flex;
+        flex-direction: column;
+        margin-left: 7%;
+    }
+    
+    .logo-footer {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        width: 400px;
+        margin-bottom: 5%;
+    }
+    
+    .phone-number {
+        color: white;
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    .contact-information {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-right: 25%;
+    }
+    
+    .contact-information a {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
